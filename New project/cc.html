@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+    }
+    .content{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(44, 189, 247);
+        align-content: center;
+        justify-content: center;
+        display: flex;
+    }
+    h1{
+        font-size: 30px;
+        color: #630eec;
+    }
+    span{
+        color: #f10c6c;
+    }
+</style>
+<body>
+    <div class="content">
+<H1>I'AM <span class="auot-type">coding</span></H1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var type=new Typed(".auot-type",{
+            String:["design","hello"],
+            typespeed:123,
+            backspeed:100,
+            loop:true
+        });
+    </script>
+     var typed = new Typed("#typed", {
+        stringsElement: '#typed-strings',
+        typeSpeed: 0,
+        backSpeed: 0,
+        backDelay: 500,
+        startDelay: 1000,
+        loop: false,
+        onBegin: function(self) { prettyLog('onBegin ' + self) },
+        onComplete: function(self) { prettyLog('onCmplete ' + self) },
+        preStringTyped: function(pos, self) { prettyLog('preStringTyped ' + pos + ' ' + self); },
+        onStringTyped: function(pos, self) { prettyLog('onStringTyped ' + pos + ' ' + self) },
+        onLastStringBackspaced: function(self) { prettyLog('onLastStringBackspaced ' + self) },
+        onTypingPaused: function(pos, self) { prettyLog('onTypingPaused ' + pos + ' ' + self) },
+        onTypingResumed: function(pos, self) { prettyLog('onTypingResumed ' + pos + ' ' + self) },
+        onReset: function(self) { prettyLog('onReset ' + self) },
+        onStop: function(pos, self) { prettyLog('onStop ' + pos + ' ' + self) },
+        onStart: function(pos, self) { prettyLog('onStart ' + pos + ' ' + self) },
+        onDestroy: function(self) { prettyLog('onDestroy ' + self) }
+      });
+        
+</body>
+</html>

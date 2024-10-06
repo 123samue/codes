@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+body{
+    background: #f3f5f9;
+    
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-image: url("image/f.jpg"  );
+
+
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.slide-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+}
+@-webkit-keyframes slide_animation{
+   
+    0%
+    {
+        
+    }
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+
+}
+.section-top{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url("image/b.jpg");
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+
+}
+.section-top h1{
+    text-align: center;
+    align-content: center;
+}
+
+
+.section-top h2{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #f3f4f3;
+    
+    float: left;
+}
+.section-top h1:nth-child(1){
+    color: transparent #f3f4f3;
+    -webkit-text-stroke: 2px #3d5;
+}
+
+@keyframes animate{
+    0%{
+        clip-path: polygon(0 40%, 25% 9%, 53% 45%, 83% 16%, 100% 0, 99% 100%, 1% 99%);
+    }
+    100%{
+        clip-path: polygon(0 20%, 20% 42%, 49% 43%, 84% 52%, 100% 24%, 99% 100%, 1% 99%);
+    }
+}
+
+
+

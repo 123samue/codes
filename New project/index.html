@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+       
+        justify-content: center;
+        margin: 0px;
+        padding: 0%;
+        background-image: url(image/k.jpg);
+        animation: change 15s infinite ease-in-out;
+        animation-direction: alternate;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bb{
+        width: 200px;
+        height: 300px;
+        padding: 30px;
+        align-content: center;
+        justify-content: center;
+        margin: 20px;
+        top: 30px;
+        left: 100px;
+        float: left;
+        margin-left: 40%;
+        margin-top: 16%;
+        font-size: 13px;
+        text-transform: uppercase;
+       
+        
+    }
+    .bb:hover{
+        font-size: 15px;
+    }
+    .bb form input{
+        text-decoration: none;
+    }
+    .bb button{
+        color:white;
+        align-content: center;
+        font-size: 11px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        background-color: blue;
+
+    }
+    .bb button:hover{
+        font-size: 13px;
+        text-shadow: #bd6969;
+    }
+    @keyframes change{
+        0%{
+            background-image: url(image/a\ \(1\).jpg);
+        }
+        10%{
+            background-image:url(image/b.jpg) ;
+        }
+        20%{
+            background-image:url(image/c.jpg) ;
+        }
+        30%{
+            background-image:url(image/d.jpg) ;
+        }
+        40%{
+            background-image:url(image/e.jpg) ;
+        }
+        50%{
+            background-image:url(image/h.jpg) ;
+        }
+        60%{
+            background-image:url(image/i.jpg) ;
+        }
+        70%{
+            background-image:url(image/k.jpg) ;
+        }
+        80%{
+            background-image:url(image/w.jpg) ;
+        }
+        90%{
+            background-image:url(image/v.jpg) ;
+        }
+        100%{
+            background-image:url(image/s.jpg) ;
+        }
+    }
+</style>
+<body>
+    <div class="bb">
+        <h1>login form</h1>
+        <form action="">
+            <label for="">fname</label>
+            <input type="text" name="" id="" requiredminlength="10" maxlength="10"><br><br>
+            <label for="">lname</label>
+            <input type="text" name="" id="" required minlength="10" maxlength="10">
+            <label for="">password</label>
+            <input type="password" name="" id="" required minlength="8" maxlength="6"><br><br>
+            <button type="submit"><a href="aa.html"></a>login</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
